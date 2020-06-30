@@ -1,0 +1,6 @@
+((license "BSD")
+ (category parsing)
+ (needs vpatterns rewind-ports)
+ (test-depends vunit)
+ (author "Richard Van Natta")
+ (synopsis "Simple regex procedures that operate on ports for use in lexing & reader macros."))

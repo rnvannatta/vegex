@@ -1,0 +1,10 @@
+(compile -s -O3 -d1 vegex.ss -j vegex)
+(compile -s vegex.import.scm -O3 -d0)
+
+(install-extension
+  'vegex
+  '("vegex.so" "vegex.import.so")
+  '((version "1.0")))
+(remove-file* "vegex.so")
+(remove-file* "vegex.import.scm")
+(remove-file* "vegex.import.so")
